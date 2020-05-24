@@ -228,7 +228,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/23/aboutTerminal/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/23/one/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="littleStrawberry">
@@ -247,7 +247,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/05/23/aboutTerminal/" itemprop="url">aboutTerminal</a></h1>
+                <a class="post-title-link" href="/2020/05/23/one/" itemprop="url">自动化测试学习笔记</a></h1>
         
 
         <div class="post-meta">
@@ -299,7 +299,24 @@
       
         
           
-            <p>title:Terminal使用笔记</p>
+            <p><a href="https://github.com/yingoja/DemoUI" target="_blank" rel="noopener">基础测试框架</a><br>采用python3 + selenium3 + PO + yaml + ddt + unittest等技术编写而成。</p>
+<p><a href="https://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">css选择器参考手册</a></p>
+<p>a.$   rm -rf node_modules/   移除node_modules下的所有文件。<br>b.$   npm cache clean           清除缓存，如果有权限问题前加sudo npm cache clean<br>c.$   npm install          安装</p>
+<p>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+<p>1.把npm下载地址切回国内<br>npm config set registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> </p>
+<p>2.清除缓存，并将安装失败的项目中的node_modules文件夹删除<br>npm cache clean –force</p>
+<p>3.重新npm install</p>
+<p>问题描述：<br>调用send_keys向<a href="https://tinypng.com/" target="_blank" rel="noopener">tinypng</a>多个文件时会叠加上传[^5月24日]</p>
+<pre><code>driver.get(&quot;https://tinypng.com&quot;)
+ele = wd.find_element_by_css_selector(&apos;input[type=file]&apos;)
+ele.send_keys(r&apos;h:\g01.png&apos;)
+ele.send_keys(r&apos;h:\g02.png&apos;)</code></pre><p><img src="/Users/user/littlestrawberry.github.io/public/images/tinypng" alt=""></p>
+<p>换了一个<a href="https://imagecompressor.com/zh/" target="_blank" rel="noopener">网站</a>用同样的代码尝试，无此问题。</p>
+<pre><code>driver.get(&quot;https://imagecompressor.com/zh/&quot;)
+time.sleep(4)
+ele = driver.find_element_by_css_selector(&apos;input[type=file]&apos;)
+ele.send_keys(r&apos;/Users/user/Documents/杂物/我的证&amp;照/本人签名.JPG&apos;)
+ele.send_keys(r&apos;/Users/user/Documents/杂物/我的证&amp;照/证件照.jpg&apos;)</code></pre><p><img src="/Users/user/littlestrawberry.github.io/public/images/imagecompressor" alt=""></p>
 
           
         
@@ -480,7 +497,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/one/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/23/aboutTerminal/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="littleStrawberry">
@@ -499,7 +516,127 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/05/20/one/" itemprop="url">自动化测试学习笔记</a></h1>
+                <a class="post-title-link" href="/2020/05/23/aboutTerminal/" itemprop="url">aboutTerminal</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-23T09:56:42+08:00">
+                2020-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>title:Terminal使用笔记</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/20/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="littleStrawberry">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="来点兴趣">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/20/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">自动化测试学习笔记</a></h1>
         
 
         <div class="post-meta">
@@ -551,14 +688,7 @@
       
         
           
-            <p><a href="https://github.com/yingoja/DemoUI" target="_blank" rel="noopener">基础测试框架</a><br>采用python3 + selenium3 + PO + yaml + ddt + unittest等技术编写而成。</p>
-<p><a href="https://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">css选择器参考手册</a></p>
-<p>a.$   rm -rf node_modules/   移除node_modules下的所有文件。<br>b.$   npm cache clean           清除缓存，如果有权限问题前加sudo npm cache clean<br>c.$   npm install          安装</p>
-<p>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
-<p>1.npm config set registry <a href="https://registry.npm.taobao.org，把npm下载地址切回国内" target="_blank" rel="noopener">https://registry.npm.taobao.org，把npm下载地址切回国内</a></p>
-<p>2.使用npm cache clean –force清除缓存，并将安装失败的项目中的node_modules文件夹删除</p>
-<p>3.重新npm install</p>
-
+            
           
         
       
@@ -639,7 +769,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
